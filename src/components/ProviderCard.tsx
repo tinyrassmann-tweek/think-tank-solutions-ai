@@ -1,0 +1,7 @@
+import { Link } from 'react-router'
+import { ArrowUpRight, BadgeCheck, Heart, MapPin } from 'lucide-react'
+import type { Provider } from '@/types'
+import Score from './Score'
+export default function ProviderCard({ provider, favorite, onFavorite }: { provider: Provider; favorite: boolean; onFavorite: () => void }) {
+  return <article className="provider-card">{provider.sponsored && <span className="sponsored-label">FIRST CHAIR · SPONSORED</span>}<div className="provider-card-top"><span className="avatar large">{provider.initials}</span><button className={favorite ? 'heart active' : 'heart'} onClick={onFavorite} aria-label={favorite ? `Remove ${provider.name} from favorites` : `Save ${provider.name} as favorite`}><Heart size={19} fill={favorite ? 'currentColor' : 'none'}/></button></div><div className="provider-identity"><h2><Link to={`/provider/${provider.id}`}>{provider.name}</Link>{provider.verified && <BadgeCheck size={17}/>}</h2><p>{provider.studio}</p><span><MapPin size={13}/>{provider.location}</span></div><p className="provider-tagline">{provider.tagline}</p><div className="specialty-tags">{provider.specialties.map((s) => <span key={s}>{s}</span>)}</div><div className="provider-card-bottom"><div><Score value={provider.score} count={provider.reviews}/><small>From ${provider.rate.toLocaleString()}</small></div><Link className="round-link" to={`/provider/${provider.id}`} aria-label={`View ${provider.name}`}><ArrowUpRight/></Link></div></article>
+}
