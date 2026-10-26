@@ -1,0 +1,11 @@
+import { useState } from 'react'
+import { MessageSquareReply, Star } from 'lucide-react'
+import PortalLayout from '@/components/PortalLayout'
+import Score from '@/components/Score'
+import Toast from '@/components/Toast'
+import { initialReviews } from '@/data/mock'
+export default function Resonance() {
+  const [reviews, setReviews] = useState(initialReviews.filter(r => r.provider === 'Northstar Automation')), [replying, setReplying] = useState<number | null>(null), [reply, setReply] = useState(''), [toast, setToast] = useState('')
+  const submit = (id: number) => { if (!reply.trim()) return; setReviews(reviews.map(r => r.id === id ? {...r,response:reply} : r));setReply('');setReplying(null);setToast('Your response now resonates publicly.') }
+  return <PortalLayout role="provider" title="Resonance" subtitle="Listen closely. Every client response helps you tune the arrangement."><div className="review-summary"><div><b>4.9</b><Score value={4.9}/><span>87 verified reviews</span></div><div className="rating-bars">{[5,4,3,2,1].map((n,i) => <div key={n}><span>{n}<Star size={11}/></span><i><b style={{width:`${[91,7,2,0,0][i]}%`}}/></i><small>{[79,6,2,0,0][i]}</small></div>)}</div></div><section className="reviews-list">{reviews.map(r => <article key={r.id}><div className="review-top"><div><b>{r.author}</b><Score value={r.score}/></div><span className={r.status === 'Published' ? 'status-pill active' : 'status-pill pending'}>{r.status.toUpperCase()}</span></div><p>“{r.text}”</p>{r.response && <div className="provider-response"><b>Your response</b><p>{r.response}</p></div>}{replying === r.id ? <div className="reply-box"><textarea autoFocus value={reply} onChange={e => setReply(e.target.value)} placeholder="Respond with gratitude and specifics…"/><div><button className="text-link" onClick={() => setReplying(null)}>Cancel</button><button className="button primary compact" onClick={() => submit(r.id)} disabled={!reply.trim()}>Publish response</button></div></div> : <button className="text-link" onClick={() => {setReplying(r.id);setReply(r.response || '')}}><MessageSquareReply size={16}/>{r.response ? 'Edit response' : 'Respond to Resonance'}</button>}</article>)}</section>{toast && <Toast message={toast} onClose={() => setToast('')}/>}</PortalLayout>
+}
