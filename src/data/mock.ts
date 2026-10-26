@@ -20,7 +20,7 @@ export const initialInstruments: Instrument[] = [
 export const initialReviews: Review[] = [
   { id: 1, author: 'Harbor Dental', provider: 'Northstar Automation', score: 5, text: 'We recovered 31 bookings in the first month. The system paid for itself before week two.', status: 'Published' },
   { id: 2, author: 'Mason & Pine', provider: 'Northstar Automation', score: 5, text: 'Ava understood our client experience before touching the automation. Thoughtful and precise.', status: 'Pending' },
-  { id: 3, author: 'Anonymous', provider: 'Signal & Service', score: 1, text: 'Limited-time offer! Visit this external link for a special deal.', status: 'Flagged' },
+  { id: 3, author: 'Anonymous', provider: 'Signal & Service', score: 1, text: 'External promotion! Visit this external link for a special deal.', status: 'Flagged' },
 ]
 
 export const contributors = [

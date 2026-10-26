@@ -30,20 +30,22 @@ export default function HeroScene() {
       points.push(p); positions.set([p.x, p.y, p.z], i * 3)
     }
     const pointGeo = new THREE.BufferGeometry(); pointGeo.setAttribute('position', new THREE.BufferAttribute(positions, 3))
-    const pointMat = new THREE.PointsMaterial({ color: 0x67e8f9, size: 0.075, transparent: true, opacity: 0.95, sizeAttenuation: true })
+    const pointMat = new THREE.PointsMaterial({ color: 0xD4AF37, size: 0.075, transparent: true, opacity: 0.9, sizeAttenuation: true })
     group.add(new THREE.Points(pointGeo, pointMat))
     const linePositions: number[] = []
     points.forEach((p, i) => points.slice(i + 1).forEach((q) => { if (p.distanceTo(q) < 1.45) linePositions.push(p.x,p.y,p.z,q.x,q.y,q.z) }))
     const lineGeo = new THREE.BufferGeometry(); lineGeo.setAttribute('position', new THREE.Float32BufferAttribute(linePositions, 3))
-    const lineMat = new THREE.LineBasicMaterial({ color: 0x22d3ee, transparent: true, opacity: 0.16 })
+    const lineMat = new THREE.LineBasicMaterial({ color: 0xD4AF37, transparent: true, opacity: 0.14 })
     group.add(new THREE.LineSegments(lineGeo, lineMat))
     const ringGeo = new THREE.TorusGeometry(3.15, 0.006, 4, 160)
-    const ringMat = new THREE.MeshBasicMaterial({ color: 0x34d399, transparent: true, opacity: 0.25 })
+    const ringMat = new THREE.MeshBasicMaterial({ color: 0xFFBF00, transparent: true, opacity: 0.3 })
     const ring = new THREE.Mesh(ringGeo, ringMat); ring.rotation.x = 1.18; ring.rotation.y = 0.3; group.add(ring)
+    const innerRing = new THREE.Mesh(new THREE.TorusGeometry(2.86, 0.004, 4, 160), new THREE.MeshBasicMaterial({ color: 0xF5F0E8, transparent: true, opacity: 0.14 }))
+    innerRing.rotation.x = 0.82; innerRing.rotation.y = -0.48; group.add(innerRing)
     const waveCount = 180
     const wavePositions = new Float32Array(waveCount * 3)
     const waveGeo = new THREE.BufferGeometry(); waveGeo.setAttribute('position', new THREE.BufferAttribute(wavePositions, 3))
-    const waveMat = new THREE.LineBasicMaterial({ color: 0x67e8f9, transparent: true, opacity: 0.9 })
+    const waveMat = new THREE.LineBasicMaterial({ color: 0xD4AF37, transparent: true, opacity: 0.82 })
     const wave = new THREE.Line(waveGeo, waveMat); wave.position.z = 2.8; scene.add(wave)
     let frame = 0, width = 0, height = 0, scroll = 0
     const resize = () => {
