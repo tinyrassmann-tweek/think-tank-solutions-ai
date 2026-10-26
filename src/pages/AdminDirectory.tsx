@@ -1,0 +1,11 @@
+import { useState } from 'react'
+import { BadgeCheck, Search } from 'lucide-react'
+import PortalLayout from '@/components/PortalLayout'
+import Toast from '@/components/Toast'
+import { providers } from '@/data/mock'
+export default function AdminDirectory() {
+  const [items, setItems] = useState(providers), [query, setQuery] = useState(''), [toast, setToast] = useState('')
+  const act = (id: string, status: 'Active' | 'Suspended') => { setItems(items.map(p => p.id === id ? {...p,status} : p));setToast(`Provider ${status === 'Active' ? 'approved' : 'suspended'} successfully.`) }
+  const reject = (id: string) => { if (confirm('Reject and remove this provider application?')) { setItems(items.filter(p => p.id !== id));setToast('Application rejected and removed from the queue.') } }
+  return <PortalLayout role="admin" title="Directory Manager" subtitle="Protect the standard. Approve, suspend, or reject provider profiles."><label className="search-box admin-search"><Search size={17}/><input placeholder="Search provider directory…" value={query} onChange={e => setQuery(e.target.value)}/></label><div className="admin-table"><div className="table-head"><span>CONDUCTOR</span><span>EXPERTISE</span><span>HARMONY</span><span>STATUS</span><span>DECISIONS</span></div>{items.filter(p => `${p.name} ${p.studio}`.toLowerCase().includes(query.toLowerCase())).map(p => <div className="admin-row" key={p.id}><div><span className="avatar">{p.initials}</span><p><b>{p.name}{p.verified && <BadgeCheck size={14}/>}</b><small>{p.studio}</small></p></div><span>{p.specialties.slice(0,2).join(' · ')}</span><b>{p.score.toFixed(1)}</b><span className={p.status === 'Active' ? 'status-pill active' : p.status === 'Pending' ? 'status-pill pending' : 'status-pill flagged'}>{p.status.toUpperCase()}</span><div className="decision-buttons">{p.status !== 'Active' && <button onClick={() => act(p.id,'Active')}>Approve</button>}{p.status === 'Pending' && <button onClick={() => reject(p.id)}>Reject</button>}{p.status === 'Active' ? <button onClick={() => act(p.id,'Suspended')}>Suspend</button> : p.status === 'Suspended' && <button onClick={() => act(p.id,'Active')}>Restore</button>}</div></div>)}</div>{toast && <Toast message={toast} onClose={() => setToast('')}/>}</PortalLayout>
+}
