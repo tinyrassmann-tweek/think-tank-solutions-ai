@@ -12,6 +12,7 @@ export default function PublicHeader() {
       <Link to="/?section=method" onClick={() => setOpen(false)}>The Method</Link>
       <Link to="/client" onClick={() => setOpen(false)}>Find a Conductor</Link>
       <Link to="/open-score" onClick={() => setOpen(false)}>Open Score</Link>
+      <NavLink to="/venture-studio" onClick={() => setOpen(false)}>Venture Studio</NavLink>
       <NavLink to="/conductor" onClick={() => setOpen(false)}>For Providers</NavLink>
     </nav>
     <Link className="button compact header-cta" to="/onboarding">Start your arrangement <ArrowUpRight size={15}/></Link>

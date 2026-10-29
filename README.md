@@ -1,6 +1,6 @@
-# Think Tank Solutions AI
+# TerraForm Sovereign AI
 
-The TerraForm Sovereign AI Platform: a premium marketplace connecting clients with vetted AI agencies and creators through the Brand Symphony Arrangement Method™.
+The trust layer marketplace from Think Tank Solutions AI: a premium marketplace connecting clients with vetted AI agencies and creators through the Brand Symphony Arrangement Method™.
 
 ## Run
 
@@ -17,12 +17,14 @@ npm run build
 - **The First Chair** — provider metrics, service CRUD, Resonance responses, social connections, and SEO readiness.
 - **The Maestro** — MRR overview, provider approval/suspension, sponsored placement ordering, and review moderation.
 - **The Open Score** — repository interface, pull-request discovery, and Fee-Free contributor leaderboard.
+- **Venture Studio** — interactive topology explorer, localized Finn blueprint generator, ClientFlow and SiteForge sandboxes, eleven-venture matrix, ownership calculator, artifact catalog, and local diagnostic brief flow.
+- **Internal AI Search Audit** — unlinked internal offer review with pricing, deliverables, timeline, FAQs, print support, and deliberately inactive booking/payment placeholders.
 
 ## Architecture
 
-React + TypeScript + Vite + Tailwind CSS + Three.js. Product surfaces live in `src/pages`, reusable interface components in `src/components`, typed demonstration data in `src/data`, and production integration seams in `src/services`. Hash routing keeps every product route reachable on static hosting.
+React + TypeScript + Vite + Tailwind CSS + Three.js. Product surfaces live in `src/pages`, reusable interface components in `src/components`, typed demonstration data in `src/data`, and production integration seams in `src/services`.
 
-This delivery is **frontend-only**. Authentication, payment, social sync, submission, and booking flows are demonstrations. Favorites and onboarding details are stored in this browser's localStorage only; they do not sync across devices and disappear when browser data is cleared. Stripe, Supabase, and Google OAuth can be connected behind `src/services/platform.ts` without redesigning the UI.
+This delivery is **frontend-only**. Authentication, payment, social sync, submission, and booking flows are demonstrations. Favorites and onboarding details are stored in this browser's localStorage only; they do not sync across devices and disappear when browser data is cleared. Studio diagnostics prepare a downloadable brief locally without transmitting data or confirming a slot. Stripe, Supabase, and Google OAuth can be connected behind `src/services/platform.ts` without redesigning the UI.
 
 ## Methodology and intellectual property
 
