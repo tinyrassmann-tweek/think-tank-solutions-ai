@@ -4,6 +4,10 @@
   "base_sha256": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
   "replacements": [
     {
+      "before": "--gold:#956c23;",
+      "after": "--gold:#8b621e;"
+    },
+    {
       "before": "<a href=\"#systems\">Our approach</a>",
       "after": "<a href=\"/studio/\">Build with us</a>"
     },
