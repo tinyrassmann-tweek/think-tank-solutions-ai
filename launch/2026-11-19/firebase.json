@@ -1,0 +1,43 @@
+{
+  "hosting": {
+    "site": "think-tank-solutions-ai",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "run": {
+          "serviceId": "think-tank-hub",
+          "region": "us-east1"
+        }
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self'; script-src 'self' 'sha256-TEY81hrtrYjLecjYIg0j4SLjJlU7wOQYCx6XVRJEuUs=' 'sha256-MyjdAt/og+QZ9rfq1EYOqxPXmhNfr0Q/j5TY1ApusHE='; style-src 'self' 'sha256-u7bynoIEUFWk2bzl0rIac4JHfhOaZ5TsZ1kNW8aez3Q='; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'"
+          },
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          },
+          {
+            "key": "Referrer-Policy",
+            "value": "strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Permissions-Policy",
+            "value": "camera=(), microphone=(), geolocation=()"
+          }
+        ]
+      }
+    ]
+  }
+}

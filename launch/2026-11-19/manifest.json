@@ -1,0 +1,16 @@
+{
+  "release": "flagship-2026-11-19-coordinated",
+  "approved_source_sha256": "2b22409f627b758ba6e084a995e1729bd356b126b41cd33b380457f10fd229fe",
+  "index_sha256": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
+  "characters": 1280316,
+  "files": {
+    "index.html": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
+    "firebase.json": "de3b9f0229259ed57741ca92e72ae149379adb1b5d7107112bd36b019a05653f"
+  },
+  "changes": [
+    "Use approved November 18 flagship design",
+    "Normalize all form choices to existing backend validation while preserving requested venture in message",
+    "Add hashed content-security policy and response headers"
+  ],
+  "rollback_revision": "think-tank-hub-00002-zx7 (API unchanged); previous Hosting version retained by Firebase"
+}
