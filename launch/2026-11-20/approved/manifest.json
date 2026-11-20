@@ -62,20 +62,20 @@
       "sha256": "0a07ad7f6ce5a010e860c53a77569e672311027b97604206d3f3a68b6eb620b8"
     },
     "public/studio/index.html": {
-      "bytes": 10470,
-      "sha256": "8728bb283cca951417303e71c905a6d51ca4992b0241783a6b589a532a8d0772"
+      "bytes": 10701,
+      "sha256": "114ef76ec078a2f854131551b8e95a662efa0f06a55f2cbcff01456fea9ac727"
     },
     "public/studio/studio.css": {
       "bytes": 3600,
       "sha256": "2ee18e78d4bd056254bb3f752cbbff9cfc14810242890c1099e90fe0b71da498"
     },
     "public/studio/sample-audit.html": {
-      "bytes": 5751,
-      "sha256": "a6cc7d0d04408d173c872091b185a3de0d1720cfd9c3f62055fd70276fd33045"
+      "bytes": 5956,
+      "sha256": "a0c9a42f0a1857f913900f43e53c28bffd973357655ee003063b976e6132d7de"
     },
     "public/studio/handover-template.html": {
-      "bytes": 13026,
-      "sha256": "c09e359e82a1a4463ab6761691cb2101e6ecd2ae01083e77e71bb73848485a8a"
+      "bytes": 13179,
+      "sha256": "7dd17ca4dc2dcfd9e5f41295b6c0c0874d8f53794d8c6789593c245c9bbc2fde"
     }
   },
   "payment_links_unchanged": true,
