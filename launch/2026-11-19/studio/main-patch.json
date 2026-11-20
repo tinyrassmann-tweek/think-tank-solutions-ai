@@ -1,0 +1,23 @@
+{
+  "base_commit": "12e0e60027ab2e3aaba762c39d18ba3ed65dbd23",
+  "base_path": "launch/2026-11-19/index.html",
+  "base_sha256": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
+  "replacements": [
+    {
+      "before": "<a href=\"#systems\">Our approach</a>",
+      "after": "<a href=\"/studio/\">Build with us</a>"
+    },
+    {
+      "before": "<section class=\"section contact\" id=\"connect\">",
+      "after": "<section id=\"studio\" class=\"section\"><div class=\"wrap\"><div class=\"section-head\"><div><span class=\"eyebrow\">Think Tank Solutions AI \u00b7 The build studio</span><h2>A working system.<br>Built around your work.</h2></div><p>Move from a tangled workflow to a client-specific system, with the documentation, deployment and operator training to use it with confidence.</p></div><div class=\"principle-grid\" style=\"display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:24px\"><article><h3>Start with the problem.</h3><p>Describe the handoffs, follow-ups or everyday work that keeps getting stuck. We define a useful, testable scope before purchase.</p></article><article><h3>Receive the whole handover.</h3><p>Your agreed deliverables include the working build, SOP/workflow library, role-agent blueprints, deployment and operator training.</p></article><article><h3>Know what you are buying.</h3><p>Search visibility audits are separate diagnostics. Custom builds have a written quote, delivery milestones, applicable license and support terms.</p></article></div><p><a class=\"button primary\" href=\"/studio/\">Explore the build studio</a> <a class=\"button\" href=\"/studio/sample-audit.html\">See a real audit example</a></p></div></section><section class=\"section contact\" id=\"connect\">"
+    },
+    {
+      "before": "<style>",
+      "after": "<meta property=\"og:title\" content=\"Think Tank Solutions AI | Practical systems, thoughtfully built\"><meta property=\"og:description\" content=\"Explore our portfolio or scope a client-specific system with the Think Tank Solutions AI build studio.\"><meta property=\"og:url\" content=\"https://thinktanksolutionsai.cloud/\"><meta property=\"og:type\" content=\"website\"><meta property=\"og:image\" content=\"https://thinktanksolutionsai.cloud/assets/brand-logo.webp\"><meta name=\"twitter:card\" content=\"summary\"><script type=\"application/ld+json\">{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Think Tank Solutions AI\",\"url\":\"https://thinktanksolutionsai.cloud/\",\"description\":\"AI consulting and build studio creating client-specific digital systems, documentation, deployment and operator training.\"}</script><style>"
+    },
+    {
+      "before": "content=\"flagship-2026-11-19-coordinated\"",
+      "after": "content=\"tts-studio-2026-11-19-production\""
+    }
+  ]
+}

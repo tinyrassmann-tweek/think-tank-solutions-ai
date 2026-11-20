@@ -1,0 +1,18 @@
+[
+  {
+    "key": "Content-Security-Policy",
+    "value": "default-src 'self'; script-src 'self' 'sha256-ecU1NIKkKAGUPnA+nOIxiBn6fnzmC1x7dR6xVkkmI0s=' 'sha256-TEY81hrtrYjLecjYIg0j4SLjJlU7wOQYCx6XVRJEuUs=' 'sha256-MyjdAt/og+QZ9rfq1EYOqxPXmhNfr0Q/j5TY1ApusHE=' 'sha256-UAMs4TVoE+ShxiIyP5iOjDEqxl+Rti3WdE78PEmXOlY='; style-src 'self' 'sha256-u7bynoIEUFWk2bzl0rIac4JHfhOaZ5TsZ1kNW8aez3Q=' 'sha256-8WWlb1RVFjIMYe5qtgdbPXm5iG8FS5uLXt5varHa9IY='; style-src-attr 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'"
+  },
+  {
+    "key": "X-Content-Type-Options",
+    "value": "nosniff"
+  },
+  {
+    "key": "Referrer-Policy",
+    "value": "strict-origin-when-cross-origin"
+  },
+  {
+    "key": "Permissions-Policy",
+    "value": "camera=(), microphone=(), geolocation=()"
+  }
+]

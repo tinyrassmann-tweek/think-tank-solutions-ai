@@ -1,0 +1,43 @@
+{
+  "release": "tts-studio-2026-11-19-production",
+  "project": "think-tank-solutions-ai",
+  "site": "think-tank-solutions-ai",
+  "expected_previous_version": "sites/think-tank-solutions-ai/versions/86c62e7ffb048b4c",
+  "base_sha256": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
+  "base_blob_sha": "ac75a7f0f9d77b2ca522d73459f6ee2ec009afce",
+  "files": {
+    "index.html": {
+      "sha256": "c3b2b8046e5eb4ac98b771812b7c72bd259bbf57be338c15529bd19e3f7c2c88",
+      "bytes": 1282494
+    },
+    "robots.txt": {
+      "sha256": "fc24d003f4380aa6659e52c296c59bcfe5abd02cec3abf1383ce6d5b52498f25",
+      "bytes": 95
+    },
+    "sitemap.xml": {
+      "sha256": "0053a9d097b71f57e74518c75ac898c550ffa38f6c35cff621a2ff707539010a",
+      "bytes": 311
+    },
+    "studio/studio.js": {
+      "sha256": "7e0b9a10939e4f2bd967cb1ef3514c76f0456c7d7641d18b28abbcea1e6df35e",
+      "bytes": 2495
+    },
+    "studio/index.html": {
+      "sha256": "ae9fb6f0275c0c71bfca9b595cd4fa5fff9507fba3b79427fc3072b688e8d02a",
+      "bytes": 8950
+    },
+    "studio/studio.css": {
+      "sha256": "0142b93f193303bbdc0428824c044970d659ccdf8098b0c2edf29b31cf121d8e",
+      "bytes": 3566
+    },
+    "studio/sample-audit.html": {
+      "sha256": "b176744ad1ca2a7d780a10be51c11780b3a4d5041767bae26be97681d2e1438d",
+      "bytes": 5736
+    },
+    "studio/handover-template.html": {
+      "sha256": "c09e359e82a1a4463ab6761691cb2101e6ecd2ae01083e77e71bb73848485a8a",
+      "bytes": 13026
+    }
+  },
+  "preserve": "Existing files, API rewrite, DNS, Cloud Run, Firestore, Genesis and venture deployments remain unchanged. No fixed custom-build price or audit checkout activated."
+}
