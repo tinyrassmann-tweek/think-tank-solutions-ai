@@ -1,0 +1,22 @@
+{
+  "expected_previous_hosting_version": "sites/think-tank-solutions-ai/versions/bdda3156b1c53e5f",
+  "sharing_grant": "tts-audit-report-sharing-2026-11-20",
+  "applies_to": [
+    "Snapshot $497",
+    "Full Audit $1,497"
+  ],
+  "legal_owner_instruction": "Use the standard and improve it, allowing customers to share the report.",
+  "order_terms_version": "tts-audits-2026-11-20",
+  "order_terms_version_note": "Existing accepted service terms and tracking remain in place. This separate grant adds sharing rights to both offered reports.",
+  "api_revision_unchanged": "think-tank-hub-00003-pfx",
+  "files": {
+    "/studio/audit-terms.html": {
+      "sha256": "ff06505eee6fa5f4dfc3920b5eedcf58b5b0fe19598ae5383934507268896c25",
+      "bytes": 5865
+    },
+    "/studio/handover-template.html": {
+      "sha256": "cfe46f1c2d835582f285338ba7332bdd57a4d0722bef08fda0456f69615ed229",
+      "bytes": 13098
+    }
+  }
+}
