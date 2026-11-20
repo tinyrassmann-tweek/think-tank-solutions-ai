@@ -18,8 +18,8 @@
       "sha256": "ddbbcc0edd5ae7ed0d3dba3aea2d3e287c2ff9f63fa607f5835b23eb34448cde"
     },
     "api/Dockerfile": {
-      "bytes": 381,
-      "sha256": "4d8d51b082a9ee9f1a2a774b02aa4458638b30d0c742c648614b3d39b331adf3"
+      "bytes": 472,
+      "sha256": "522947344a405bb0662082bfe1147e276272f3c7a802c7ecccda36f4fa2418b7"
     },
     "api/lead-validation.mjs": {
       "bytes": 2698,
@@ -93,5 +93,6 @@
     "new_payment_objects": false,
     "paid_ttl_enabled": false
   },
-  "runtime_base": "Existing deployed image pinned by digest; Node/OS/dependency layers unchanged. Reuse its vulnerability scan for those immutable layers and validate the new application source separately."
+  "runtime_base": "Existing deployed image pinned by digest; Node/OS/dependency layers unchanged. Reuse its vulnerability scan for those immutable layers and validate the new application source separately.",
+  "runtime_correction": "Remove unused global npm/npx tooling from the immutable existing base; all ten observed HIGH findings were in its bundled npm dependency tree. Application uses only Node built-ins and starts with node directly. Corrected image must be scanned before promotion."
 }
