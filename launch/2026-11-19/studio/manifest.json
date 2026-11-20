@@ -2,8 +2,8 @@
   "release": "tts-studio-2026-11-19-production",
   "project": "think-tank-solutions-ai",
   "site": "think-tank-solutions-ai",
-  "expected_previous_version": "sites/think-tank-solutions-ai/versions/3f7629ffa5c8832a",
-  "expected_live_index_sha256": "c3b2b8046e5eb4ac98b771812b7c72bd259bbf57be338c15529bd19e3f7c2c88",
+  "expected_previous_version": "sites/think-tank-solutions-ai/versions/b74aa33c33977fec",
+  "expected_live_index_sha256": "a8abb6b2449010582f8ff27723605b603278ce58719277da4de3c682d3820c33",
   "base_sha256": "eaae5dfb3c085c06e96c8e074ea76bc5b992d76919dc3c78dd763e5c39d6db67",
   "base_blob_sha": "ac75a7f0f9d77b2ca522d73459f6ee2ec009afce",
   "files": {
@@ -24,16 +24,16 @@
       "bytes": 2495
     },
     "studio/index.html": {
-      "sha256": "ae9fb6f0275c0c71bfca9b595cd4fa5fff9507fba3b79427fc3072b688e8d02a",
-      "bytes": 8950
+      "sha256": "5a3dff0f2832beb1773723b0f4a4c0f085fa273eb7b039af3092aba7061b5cd7",
+      "bytes": 8980
     },
     "studio/studio.css": {
       "sha256": "0df9c3e0e902e6afd27aa1a3ac85d9a2495652b7d5b2fb54717265c8ea91c1ee",
       "bytes": 3566
     },
     "studio/sample-audit.html": {
-      "sha256": "b176744ad1ca2a7d780a10be51c11780b3a4d5041767bae26be97681d2e1438d",
-      "bytes": 5736
+      "sha256": "479c396ce6e041609c3d9b83f4b8570ea4a8565bf00f31836e5cd86f633bccc0",
+      "bytes": 5751
     },
     "studio/handover-template.html": {
       "sha256": "c09e359e82a1a4463ab6761691cb2101e6ecd2ae01083e77e71bb73848485a8a",
