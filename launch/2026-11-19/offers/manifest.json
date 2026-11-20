@@ -1,0 +1,17 @@
+{
+  "clientflow-index.html": {
+    "sha256": "554368ef8da42d0c3a042b5dcb363fb7382c6a055acbe47c290e79a12780c396",
+    "bytes": 11197,
+    "characters": 11187
+  },
+  "clientflow-landing.js": {
+    "sha256": "3e4259a1271047ab8c94da984e918c167debc68e8fb11192a07dd120e8b442b7",
+    "bytes": 4608,
+    "characters": 4602
+  },
+  "my-ancestry-speaks-index.html": {
+    "sha256": "3daf14aeb737ad19362560bd889e7897daff91be08fd25c7f3684a1f35fbfd92",
+    "bytes": 63293,
+    "characters": 63233
+  }
+}
